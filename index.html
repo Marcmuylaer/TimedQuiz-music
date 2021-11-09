@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Music Quiz</title>
+  </head>
+  <body>
+    <header class="mb-5">
+      <nav class="navbar navbar-expand-lg bottom-line">
+        <h1>Music Quiz</h1>
+      </nav>
+    </header>
+
+    <!-- Start Button -->
+    <div class="container text-center start-container" id="start-container">
+      <h5>Music Quiz</h5>
+      <button class="btn" id="start-button">Start</button>
+    </div>
+
+ 
+
+    <!-- Questions Container -->
+    <div class="hide" id="question-container">
+        <div class="heading">
+          <h3 id="question"></h3>
+        </div>
+        <div id="answers-container">
+          <div id="check-answers"></div>
+        </div>
+    </div>
+
+  <!-- Time Container -->
+    <div class="container time-container">
+      <h4>Check your time!</h2>
+      <div id="time">
+        <div id="time">
+          <p>Time Left: <span id="timerNumber">50</span></p>
+        </div>
+        <div id="score">
+          <p>Score: <span id="userScore">0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Finished Container -->
+    <div class="hide" id="end-container">
+      <div>
+        <h5>All Done!</h5>
+        <p>Type you're initials</p>
+        <form>
+          <input id="name" type="text" />
+          <button
+            type="submit"
+            class="btn btn-secondary submit-button"
+            id="submit-button"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scores Container -->
+    <div class="hide" id="scoreContainer">
+      <h3>Top Scores</h3>
+      <div class="scoresList" id="scoreList"></div>
+
+      <button class="btn btn-secondary" id="tryAgain">Try Again</button>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

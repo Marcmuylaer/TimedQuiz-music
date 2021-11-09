@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+body {
+  /* background: url("./images/musicQuiz.jpg") no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  color: #2ab7ca;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.navbar h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Global Container Styling */
+.container {
+  background-color: #ebebeb;
+  box-shadow: 2px 2px 7px black;
+  padding: 20px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 40%;
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 70%;
+  }
+
+}
+
+
+
+.start-container button {
+  background-color: #2ab7ca;
+  border: 0.1rem solid black;
+  width: 5rem !important;
+}
+
+/* Second Container Styling */
+.heading {
+  margin: 10px;
+}
+
+#questions-container {
+  width: 18rem;
+  margin: 100px auto;
+  position: relative;
+}
+.time-container h4 {
+  color: #ebebeb;
+  background-color: #2ab7ca;
+  max-width: 15rem;
+  max-height: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 1.5rem;
+  padding: 0.4rem;
+  box-shadow: 0.0625rem 0.0625rem 0.0625rem black;
+}
+
+.answerButtons {
+  margin: 1rem;
+  max-width: 15rem;
+  min-width: 15rem;
+  max-height: 4rem;
+  min-height: 4rem;
+  padding: 0.4rem;
+  background-color: #2ab7ca;
+  border: 0.1rem solid black;
+  width: 5rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .answerButtons {
+    max-width: 9rem;
+    min-width: 9rem;
+    max-height: 4rem;
+    min-height: 4rem;
+    font-size: 0.8rem;
+    right: 80%;
+  }
+
+}
+
+/* Finished Container */
+#submit-button {
+  margin: 5px;
+}
+
+/* Last Container Styling */
+#scoresList {
+  padding: 2px;
+}
+
+.scoresList {
+  margin: 10rem;
+}
+.scoresList p {
+color: #2ab7ca;
+font-size: 1.5rem;
+text-transform: uppercase;
+}
+
+.listItem {
+  margin-top: 1rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  border-bottom: 0.10rem solid #2ab7ca;
+}
+
+@media only screen and (max-width: 600px) {
+  .scoresList {
+    margin: 10rem;
+    align-items: center;
+  }
+  .scoresList p {
+
+  font-size: 1rem;
+ 
+  }
+  
+  .listItem {
+    margin-top: 1rem;
+    border-bottom: 0.10rem solid #2ab7ca;
+    padding-bottom: 0.5rem;
+  }
+
+  #name {
+    max-width: 6rem;
+  }
+}
+
+
+/* Score Container */
+#scoreList {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+}
